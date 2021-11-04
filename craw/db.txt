@@ -1,0 +1,23 @@
+이름
+별점
+방문자리뷰
+블로그리뷰
+
+create table rest(
+id INT Primary Key,
+name varchar(20),
+area varchar(10),
+star varchar(10),
+visitor varchar(20),
+blog varchar(20)
+);
+
+
+
+Create table reserv(
+id INT PRIMARY KEY AUTO_INCREMENT, 
+name VARCHAR(100),
+email VARCHAR(30),
+phone VARCHAR(20),
+message VARCHAR(500)
+);

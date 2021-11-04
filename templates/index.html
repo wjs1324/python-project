@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="{{ url_for('static', filename='assets/img/navbar-logo.png') }}" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">서비스</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">정보</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#food">맛집</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">팀소개</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">　<br><br><br><br><br></div>
+                <div class="masthead-heading text-uppercase">　<br><br></div>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">제공되는 서비스</h2>
+
+
+                    <h3 class="section-subheading text-muted">서비스 제공 내용</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <svg class="svg-inline--fa fa-circle fa-w-16 fa-stack-2x text-primary" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><img src="{{ url_for('static', filename='assets/img/icons/111.jpg') }}" width="160" height="160"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                        </span>
+                        <h4 class="my-3">지역별 숙박</h4>
+                        <p class="text-muted">평점과 리뷰를 분석하여 최적의 숙소를 추천해드립니다.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <svg class="svg-inline--fa fa-circle fa-w-16 fa-stack-2x text-primary" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><img src="{{ url_for('static', filename='assets/img/icons/222.jpg') }}" width="160" height="160"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                        </span>
+                        <h4 class="my-3">맛집 추천</h4>
+                        <p class="text-muted">추천된 숙소 근처의 맛집을 추천해드립니다.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                          <svg class="svg-inline--fa fa-circle fa-w-16 fa-stack-2x text-primary" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><img src="{{ url_for('static', filename='assets/img/icons/333.jpg') }}" width="160" height="160"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                        </span>
+                        <h4 class="my-3">관광지 추천</h4>
+                        <p class="text-muted">추천된 숙소 근처의 관광지를 추천해드립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">지역별 숙소 및 관광지 정보</h2>
+                    <h3 class="section-subheading text-muted">아래의 지역으로 이동하여 숙소 및 관광지 정보를 확인하실 수 있습니다.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/1.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">가평</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/2.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">강릉</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/3.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">거제</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/4.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">경주</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/5.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">속초</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/6.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">여수</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 7-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/7.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">제주</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 8-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/8.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">포항</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 9-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/9.jpg') }}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">부산</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="page-section" id="food">
+            <div class="container">
+
+
+
+
+              <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text-center">
+                      <h4>부산 맛집 별점순 TOP</h4>
+                      <br>
+                      {% for i in range(rows|length) %}
+                      {% if rows[i][2]=='부산' %}
+                      가게 이름 : {{ rows[i][1] }}
+                      <br>
+                      평점 : {{ rows[i][3] }}
+                      <br>
+                      방문자 리뷰 : {{ rows[i][4] }}
+                      <br>
+                      블로그 리뷰 : {{ rows[i][5] }}
+                      <br>
+                      <br>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="text-center">
+                      <h4>여수 맛집 별점순 TOP</h4>
+                      <br>
+                      {% for i in range(rows|length) %}
+                      {% if rows[i][2]=='여수' %}
+                      가게 이름 : {{ rows[i][1] }}
+                      <br>
+                      평점 : {{ rows[i][3] }}
+                      <br>
+                      방문자 리뷰 : {{ rows[i][4] }}
+                      <br>
+                      블로그 리뷰 : {{ rows[i][5] }}
+                      <br>
+                      <br>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="text-center">
+                      <h4>제주도 맛집 별점순 TOP</h4>
+                      <br>
+                      {% for i in range(rows|length) %}
+                      {% if rows[i][2]=='제주도' %}
+                      가게 이름 : {{ rows[i][1] }}
+                      <br>
+                      평점 : {{ rows[i][3] }}
+                      <br>
+                      방문자 리뷰 : {{ rows[i][4] }}
+                      <br>
+                      블로그 리뷰 : {{ rows[i][5] }}
+                      <br>
+                      <br>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="text-center">
+                      <h4>거제도 맛집 별점순 TOP</h4>
+                      <br>
+                      {% for i in range(rows|length) %}
+                      {% if rows[i][2]=='거제도' %}
+                      가게 이름 : {{ rows[i][1] }}
+                      <br>
+                      평점 : {{ rows[i][3] }}
+                      <br>
+                      방문자 리뷰 : {{ rows[i][4] }}
+                      <br>
+                      블로그 리뷰 : {{ rows[i][5] }}
+                      <br>
+                      <br>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+              </div>
+
+<br>
+              <div class="row">
+                  <div class="col-lg-3">
+                    <div class="text-center">
+                      <h4>포항 맛집 별점순 TOP</h4>
+                      <br>
+                      {% for i in range(rows|length) %}
+                      {% if rows[i][2]=='포항' %}
+                      가게 이름 : {{ rows[i][1] }}
+                      <br>
+                      평점 : {{ rows[i][3] }}
+                      <br>
+                      방문자 리뷰 : {{ rows[i][4] }}
+                      <br>
+                      블로그 리뷰 : {{ rows[i][5] }}
+                      <br>
+                      <br>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="text-center">
+                      <h4>경주 맛집 별점순 TOP</h4>
+                      <br>
+                      {% for i in range(rows|length) %}
+                      {% if rows[i][2]=='경주' %}
+                      가게 이름 : {{ rows[i][1] }}
+                      <br>
+                      평점 : {{ rows[i][3] }}
+                      <br>
+                      방문자 리뷰 : {{ rows[i][4] }}
+                      <br>
+                      블로그 리뷰 : {{ rows[i][5] }}
+                      <br>
+                      <br>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="text-center">
+                      <h4>속초 맛집 별점순 TOP</h4>
+                      <br>
+                      {% for i in range(rows|length) %}
+                      {% if rows[i][2]=='속초' %}
+                      가게 이름 : {{ rows[i][1] }}
+                      <br>
+                      평점 : {{ rows[i][3] }}
+                      <br>
+                      방문자 리뷰 : {{ rows[i][4] }}
+                      <br>
+                      블로그 리뷰 : {{ rows[i][5] }}
+                      <br>
+                      <br>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="text-center">
+                      <h4>강릉 맛집 별점순 TOP</h4>
+                      <br>
+                      {% for i in range(rows|length) %}
+                      {% if rows[i][2]=='강릉' %}
+                      가게 이름 : {{ rows[i][1] }}
+                      <br>
+                      평점 : {{ rows[i][3] }}
+                      <br>
+                      방문자 리뷰 : {{ rows[i][4] }}
+                      <br>
+                      블로그 리뷰 : {{ rows[i][5] }}
+                      <br>
+                      <br>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+              </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- Team-->
+                <section class="page-section bg-light" id="team">
+                    <div class="container">
+                        <div class="text-center">
+                            <h2 class="section-heading text-uppercase">Our Team Member</h2>
+                            <h3 class="section-subheading text-muted">팀원 소개 및 역할</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="team-member">
+                                    <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='assets/img/team/1.jpg') }}" alt="..." />
+                                    <h4>안상현</h4>
+                                    <p class="text-muted">팀장 및 프로젝트 총괄</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="team-member">
+                                    <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='assets/img/team/2.jpg') }}" alt="..." />
+                                    <h4>조준형</h4>
+                                    <p class="text-muted">플라스크 및 웹페이지 구현</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="team-member">
+                                    <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='assets/img/team/3.jpg') }}" alt="..." />
+                                    <h4>전우민</h4>
+                                    <p class="text-muted">DB 연동 및 웹 크롤링 구현</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="team-member">
+                                    <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='assets/img/team/4.jpg') }}" alt="..." />
+                                    <h4>권다정</h4>
+                                    <p class="text-muted">웹 크롤링 및 HTML 웹페이지 제작</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        <!-- Clients-->
+        <br><br><br><br><div class="text-center">
+          <h4>9개 지역에 대한 선호도, 평점, 리뷰 관련 통계 그래프</h4>
+          <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/result.png') }}" alt="..." />
+
+          <br>
+          <br>
+          <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/pandas.png') }}" alt="..." />
+          <br>
+          <br>
+
+
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">사이트 건의사항 문의</h2>
+                    <h3 class="section-subheading text-muted">아래에 항목에 따라 문의사항을 주세요.</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+
+""                <form action="http://192.168.34.41:5000/post" method="post" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" name="name" id="name" type="text" placeholder="이름 입력 *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" name="email" id="email" type="email" placeholder="이메일 입력 *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" name="phone" id="phone" type="tel" placeholder="휴대전화번호 입력 *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" name="message" id="message" placeholder="기타 요구사항 입력 *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">성공적으로 전송되었습니다!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">전송 실패되었습니다.</div></div>
+                    <!-- Submit Button-->
+
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase abled" value="submit" type="submit">전송</button></div>
+                </form>
+
+              </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col-md-4 col-sm-6 my-3">
+                          <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{{ url_for('static', filename='assets/img/logos/airbnb-logo.png') }}" alt="..." /></a>
+                      </div>
+                      <div class="col-md-4 col-sm-6 my-3">
+                          <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{{ url_for('static', filename='assets/img/logos/야놀자-logo.svg') }}" alt="..." /></a>
+                      </div>
+                      <div class="col-md-4 col-sm-6 my-3">
+                          <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{{ url_for('static', filename='assets/img/logos/mangoplate-logo.svg') }}" alt="..." /></a>
+                      </div>
+                  </div>
+              </div>
+            <br><br><div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-lg-start">혁신성장 인공지능 Python 미니프로젝트 2조<br>안상현, 조준형, 전우민, 권다정</div>
+                    <div class="col-lg-6 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">가평 숙소 추천</h2>
+                                    <p class="item-intro text-muted">경기도 가평군</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/1.jpg') }}" alt="..." />
+
+                                    <br>
+                                    경기도의 기초자치단체 중 하나. 경기도 북동부에 있다. 동쪽은 강원도 춘천시와 홍천군, 서쪽은 남양주시와 포천시, 남쪽은 양평군, 북쪽은 강원도 화천군과 접한다.<br>
+                                    한국 여름 레저 스포츠의 성지라고 불리는 곳이기도 하다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/%EA%B0%80%ED%8F%89%EA%B5%B0/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&source=structured_search_input_header&search_type=search_query">에어비엔비 가평 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>가평 숙소 평점 및 리뷰 관련 그래프</h4>
+
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/가평_review.png') }}" alt="..." />
+                                    그래프1. 가평군 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/가평_star.png') }}" alt="..." />
+                                    그래프2. 가평군 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/가평.png') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">강릉 숙소 추천</h2>
+                                    <p class="item-intro text-muted">강원도 강릉시</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/2.jpg') }}" alt="..." />
+
+                                    <br>
+                                    강원도 동부에 위치한 시. 원주시, 춘천시와 함께 강원도 3대 도시 중 하나이며 동해안에 접하는 강원도 영동 지방의 최대 거점 도시이다. <br>
+                                    동으로는 동해, 남으로는 강원도 동해시와 정선군, 서로는 강원도 평창군과 홍천군, 북으로는 강원도 양양군에 접한다.<br>
+                                    부산과 마찬가지인 관광도시로 여름 피서철에만 평균 600만~800만 명이 찾아온다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/%EA%B0%95%EB%A6%89%EC%8B%9C/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&source=structured_search_input_header&search_type=search_query">에어비엔비 강릉 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>강릉 숙소 평점 및 리뷰 관련 그래프</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/강릉_review.png') }}" alt="..." />
+                                    그래프1. 강릉시 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/강릉_star.png') }}" alt="..." />
+                                    그래프2. 강릉시 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/강릉.png') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">거제 숙소 추천</h2>
+                                    <p class="item-intro text-muted">경상남도 거제시</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/3.jpg') }}" alt="..." />
+
+                                    <br>
+                                    경상남도 남부에 위치한 시. 시 면적의 대부분을 차지하는 섬 거제도는 대한민국에서 제주도 다음으로 큰 섬이며,<br> 인구도 제주도 다음으로 많고 섬을 본토로 하는 기초자치단체 중에서 유일한 시이다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/%EA%B1%B0%EC%A0%9C%EC%8B%9C/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&source=structured_search_input_header&search_type=search_query">에어비엔비 거제 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>거제 숙소 평점 및 리뷰 관련 그래프</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/거제도_review.png') }}" alt="..." />
+                                    그래프1. 거제시 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/거제도_star.png') }}" alt="..." />
+                                    그래프2. 거제시 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/거제.png') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">경주 숙소 추천</h2>
+                                    <p class="item-intro text-muted">❤경상북도 경주시❤</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/4.jpg') }}" alt="..." />
+
+                                    <br>
+                                    경상북도 동남부에 위치한 시. 동쪽으로 동해, 서쪽으로 영천시 및 청도군, 남쪽으로 울산광역시, 북쪽으로 포항시와 접하고 있다.<br>
+                                    평양, 서울 등과 더불어 한반도에서 그 역사가 가장 오래된 도시 가운데 하나이며, 고대 한반도에 존속했던 국가 신라의 수도인 서라벌이기도 하다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/%EA%B2%BD%EC%A3%BC%EC%8B%9C/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&source=structured_search_input_header&search_type=search_query">에어비엔비 경주 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>경주 숙소 평점 및 리뷰 관련 그래프</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/경주_review.png') }}" alt="..." />
+                                    그래프1. 경주시 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/경주_star.png') }}" alt="..." />
+                                    그래프2. 경주시 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/경주.jpg') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">속초 숙소 추천</h2>
+                                    <p class="item-intro text-muted">❤강원도 속초시❤</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/4.jpg') }}" alt="..." />
+
+                                    <br>
+                                    강원도 동북부에 위치한 시.<br>동쪽으로 동해안과 접하고 서쪽으로는 설악산 사이로 인제군 북면, 남쪽으로는 양양군 강현면, 북쪽으로는 고성군 토성면과 접한다.<br>
+                                    대표적인 국내 여행지 중 한 곳으로 관광 산업이 발달하여 있다.<br>관광 도시답게 음식점과 숙박시설이 많이 있으며 최근 고속도로가 개통되면서 관광객 수가 크게 증가하고 있는 추세이다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/%EC%86%8D%EC%B4%88%EC%8B%9C/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&source=structured_search_input_header&search_type=search_query">에어비엔비 속초 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>속초 숙소 평점 및 리뷰 관련 그래프</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/속초_review.png') }}" alt="..." />
+                                    그래프1. 속초시 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/속초_star.png') }}" alt="..." />
+                                    그래프2. 속초시 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/속초.jpg') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">여수 숙소 추천</h2>
+                                    <p class="item-intro text-muted">전라도 여수시</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/6.jpg') }}" alt="..." />
+
+                                    <br>
+                                    전남 2위인 278,999명의 인구와 전남 수출액의 74.4%를 담당하고 1,316만 명의 관광객이 방문하는 등, 명실상부한 전남을 대표하는 도시다. 서쪽으로 고흥군, 북쪽으로 순천시, 동쪽으로 광양시, 경상남도 남해군 남쪽으로 남해가 펼쳐져 있고 남서쪽으로 완도군 산하섬들과 접해있다. 한려해상국립공원과 다도해해상국립공원 두 국립공원 모두 여수시 지역을 포함하고 있으며, 이 중 한려해상의 '려'가 여수시를 의미한다
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/여수시--전라남도--대한민국/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&query=여수시%2C%20전라남도%2C%20대한민국&place_id=ChIJr6uLHx-UbTURi26I5drZAok&source=structured_search_input_header&search_type=autocomplete_click">에어비엔비 여수 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>여수 숙소 평점 및 리뷰 관련 그래프</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/여수_review.png') }}" alt="..." />
+                                    그래프1. 여수시 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/여수_star.png') }}" alt="..." />
+                                    그래프2. 여수시 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/여수.png') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 7 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">제주도</h2>
+                                    <p class="item-intro text-muted">제주특별자치도</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/7.jpg') }}" alt="..." />
+
+                                    <br>
+                                    대한민국 최남단에 자리한 광역자치단체. 대한민국의 유일한 특별자치도며, 유일하게 모든 관할지역이 도서지역인 광역자치단체다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/제주도/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&source=structured_search_input_header&search_type=search_query">에어비엔비 제주도 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>제주도 숙소 평점 및 리뷰 관련 그래프</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/제주도_review.png') }}" alt="..." />
+                                    그래프1. 제주도 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/제주도_star.png') }}" alt="..." />
+                                    그래프2. 제주도 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/제주.png') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 8 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">포항 숙소 추천</h2>
+                                    <p class="item-intro text-muted">❤경상북도 포항시❤</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/8.jpg') }}" alt="..." />
+
+                                    <br>
+                                    ❤포항시(浦項市)는 대한민국 경상북도 동해안에 있는 시이다.❤ <br>시의 중심으로 흐르는 형산강이 영일만에 유입되면서 넓은 충적평야를 형성하고 있다. 1970년대 초 포항제철이 조성되면서 도시화가 진행되었다. 포스코 본사가 있고, 교육 기관으로는 포항공과대학교와 한동대학교, 포항대학교, 선린대학교가 있고, 상륙작전을 주임무로 하는 대한민국 해병대의 주둔지이다. 특산물로는 구룡포의 과메기가 유명하다. 시청 소재지는 남구 대잠동이고, 행정구역은 2구 4읍 10면 15동이다.
+                                    철강 산업을 기반으로 경북 최대의 도시로 발전했으며, 주민등록 인구는 약 50만 3천명이다. 경상북도의 시 가운데 유일하게 북구와 남구의 2개의 행정구가 있다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/%ED%8F%AC%ED%95%AD%EC%8B%9C/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&source=structured_search_input_header&search_type=search_query">에어비엔비 포항 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>포항 숙소 평점 및 리뷰 관련 그래프</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/포항_review.png') }}" alt="..." />
+                                    그래프1. 포항 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/포항_star.png') }}" alt="..." />
+                                    그래프2. 포항 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/h1.jpg') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 9 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">부산 숙소 추천</h2>
+                                    <p class="item-intro text-muted">❤부산광역시❤</p>
+                                    <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/9.jpg') }}" alt="..." />
+
+                                    <br>
+                                    ❤부산광역시는 대한민국 동남부 해안에 위치한 광역시이다.❤ 대한민국의 도시이자 최대의 해양 물류 도시이며, 부산항을 중심으로 해상 무역과 물류 산업이 발달하였다. 일본과는 대한해협과 쓰시마섬을 사이에 두고 마주하고 있다. 시청 소재지는 연제구 연산동이며, 행정구역으로는 15구 1군을 두고 있다.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.airbnb.co.kr/s/%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=august&flexible_trip_dates%5B%5D=july&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&source=structured_search_input_header&search_type=search_query">에어비엔비 부산 숙소 바로가기</a>
+                                    <br>
+                                    <br>
+                                    <h4>부산 숙소 평점 및 리뷰 관련 그래프</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/부산_review.png') }}" alt="..." />
+                                    그래프1. 부산 에어비엔비 숙소 후기순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/부산_star.png') }}" alt="..." />
+                                    그래프2. 부산 에어비엔비 숙소 별점순
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4> 주변 관광지 추천</h4>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/tour/i1.jpg') }}" alt="..." />
+
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{ url_for('static', filename='assets/img/close-icon.svg') }}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/여수_review.png') }}" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='assets/img/graphs/여수_star.png') }}" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
